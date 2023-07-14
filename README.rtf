@@ -1,0 +1,102 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fswiss\fcharset0 ArialMT;
+\f3\fnil\fcharset0 HelveticaNeue;\f4\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue37;\red255\green255\blue255;\red0\green0\blue0;
+\red255\green255\blue255;\red34\green255\blue6;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;
+\red255\green255\blue255;\red255\green255\blue11;\red153\green168\blue186;\red121\green164\blue247;\red123\green166\blue248;
+\red123\green166\blue249;\red252\green41\blue19;\red255\green255\blue255;\red255\green255\blue255;\red123\green166\blue248;
+\red123\green166\blue249;\red38\green255\blue255;\red255\green255\blue255;\red252\green41\blue19;\red255\green255\blue255;
+\red212\green212\blue212;\red202\green202\blue202;\red141\green212\blue254;\red194\green126\blue101;\red202\green202\blue202;
+\red212\green212\blue212;\red202\green202\blue202;\red141\green212\blue254;\red194\green126\blue101;\red251\green0\blue255;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c79920\c46956\c19137;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c0\c1\c1;
+\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c0\c100000\c0;\cssrgb\c100000\c100000\c99971\c0;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99956\c0;
+\cssrgb\c100000\c100000\c99941\c0;\cssrgb\c100000\c100000\c0;\cssrgb\c66409\c71888\c77837;\cssrgb\c54589\c71129\c97660;\cssrgb\c55060\c71669\c98063;
+\cssrgb\c55296\c71938\c98264;\cssrgb\c100000\c25745\c7993;\cssrgb\c100000\c100000\c99956;\cssrgb\c100000\c100000\c99971\c0;\cssrgb\c55060\c71669\c98063;
+\cssrgb\c55296\c71938\c98264;\cssrgb\c8302\c100000\c100000;\cssrgb\c100000\c100000\c99911;\cssrgb\c100000\c25745\c7993;\cssrgb\c100000\c100000\c99956;
+\cssrgb\c86370\c86370\c86262;\cssrgb\c83229\c83229\c83125;\cssrgb\c61361\c86489\c99746;\cssrgb\c80778\c56830\c46925;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c86370\c86370\c86262;\cssrgb\c83229\c83229\c83125;\cssrgb\c61361\c86489\c99746;\cssrgb\c80778\c56830\c46925;\cssrgb\c100000\c7248\c100000;
+\cssrgb\c100000\c100000\c99971;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Como Ejecutar de manera correcta el c\'f3digo\
+1.Crea La base de datos con el nombre de \'93invenario_pruebas\'94 y la usas\
+\
+2. Una vez abras el proyecto lo primero es configurar el application.properties con los datos de la base de datos, MUY IMPORTANTE que la opci\'f3n 
+\f1\fs26 \cf2 \cb3 spring.jpa.hibernate.ddl-auto \cf4 \cb5 tenga la opci\'f3n de \cf6 \cb7 create \cf8 \cb9 ya que al momento de ejecutar por primera vez la app debemos crear la tabla, una vez lo ejecutes cambias esta opci\'f3n por \cf6 \cb10 none\cf8 \cb9 , ya que no es necesario volver a crearla\
+\
+\'a1 En la clase \cf11 \cb5 CrudPruebaSebastianArenasApplication \cf8 \cb7 puedes descomentar las lineas para iniciar la aplicaci\'f3n con algunos valores de prueba !\cf12 \cb3 \
+\cf2 \
+\
+\cf8 \cb7 3. Ya puedes ejecutar el c\'f3digo sin ning\'fan problema\
+\
+El c\'f3digo se implement\'f3 en el IDE DE {\field{\*\fldinst{HYPERLINK "https://www.jetbrains.com/es-es/idea/"}}{\fldrslt 
+\f2\fs40 \cb3 \expnd0\expndtw0\kerning0
+\ul \outl0\strokewidth0 \strokec13 IntelliJ\'a0}}
+\f2\fs40 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec14  
+\fs28 con la version 11 de java\
+\
+El proyecto consta de una parte visual que interact\'faa con los endpoints del CRUD y otra parte que es solo Para el consumo de estos\
+\
+\
+Endpoint para eliminar Producto\cb3 \strokec15 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf16 \cb7 \strokec17 http://localhost:8080/rest/productos/\{id\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf8 \cb18 \outl0\strokewidth0 Endpoint para Actualizar Producto\cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf21 \cb7 \outl0\strokewidth0 \strokec17 http://localhost:8080/rest/productos/ActualizarProductoID/\cf21 \cb7 \outl0\strokewidth0 \{id\}\cf23 \cb18 \
+\pard\pardeftab720\partightenfactor0
+\cf23 \
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf25 \cb3 \outl0\strokewidth0 \strokec25 \{\cf26 \strokec26 \
+    \cf27 \strokec27 "nombre"\cf25 \strokec25 :\cf28 \strokec28 "nuevo Producto"\cf25 \strokec25 ,\cf26 \strokec26 \
+    \cf27 \strokec27 "referencia"\cf25 \strokec25 :\cf28 \strokec28 "00010"\cf25 \strokec25 ,\cf26 \strokec26 \
+    \cf27 \strokec27 "precio"\cf25 \strokec25 :\cf28 \strokec28 "100"\cf25 \strokec25 ,\cf26 \strokec26 \
+    \cf27 \strokec27 "peso"\cf25 \strokec25 :\cf28 \strokec28 "24"\cf25 \strokec25 ,\cf26 \strokec26 \
+    \cf27 \strokec27 "categoria"\cf25 \strokec25 :\cf28 \strokec28 "ramdom"\cf25 \strokec25 ,\cf26 \strokec26 \
+    \cf27 \strokec27 "stock"\cf25 \strokec25 :\cf28 \strokec28 "16"\cf25 \strokec25 ,\cf26 \strokec26 \
+    \cf27 \strokec27 "fecha"\cf25 \strokec25 :\cf28 \strokec28 "2023-07-18"\cf26 \strokec26 \
+\cf25 \strokec25 \}\cf29 \cb1 \strokec29 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf23 \cb18 \outl0\strokewidth0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf8 Endpoint para Guardar nuevo Producto\cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf6 \cb5 \outl0\strokewidth0 \strokec17 http://localhost:8080/rest/productos/GuardarNuevoProducto\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf30 \cb3 \outl0\strokewidth0 \{\cf31 \
+    \cf32 "nombre"\cf30 :\cf33 "nuevo Producto"\cf30 ,\cf31 \
+    \cf32 "referencia"\cf30 :\cf33 "00010"\cf30 ,\cf31 \
+    \cf32 "precio"\cf30 :\cf33 "100"\cf30 ,\cf31 \
+    \cf32 "peso"\cf30 :\cf33 "24"\cf30 ,\cf31 \
+    \cf32 "categoria"\cf30 :\cf33 "ramdom"\cf30 ,\cf31 \
+    \cf32 "stock"\cf30 :\cf33 "16"\cf30 ,\cf31 \
+    \cf32 "fecha"\cf30 :\cf33 "2023-07-18"\cf31 \
+\cf30 \}
+\f3 \cf23 \cb18 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf8 Endpoint para Listar todos los productos\cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf34 \cb5 \outl0\strokewidth0 \strokec35 http://localhost:8080/rest/productos/ListarTodo\cf23 \cb18 \outl0\strokewidth0 \
+\pard\pardeftab720\partightenfactor0
+\cf23 \
+\
+\
+}
